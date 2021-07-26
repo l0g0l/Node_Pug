@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Node.js
+        link(rel="shortcut icon" href="#")
+        link(rel="stylesheet" href="/css/style.css")
+    body
+        nav
+            a.cont(href="/")
+                img(
+                    src="/img/logoNode.png" 
+                    alt="logoNode"
+                    class="logo"
+                    ) 
+        
+        h1 Hasta que contactes con nosotros...échate un vistazo a estas noticias
+        h2 Pa no aburrirte, vamos
+
+        each article in results
+
+            h3=article.title
+            p=article.content
+            img(src=article.urlToImage)
+       
+        a.cont(href="/") HOME

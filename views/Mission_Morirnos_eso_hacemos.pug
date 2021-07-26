@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title title Node.js
+        link(rel="shortcut icon" href="#")
+        link(rel="stylesheet" href="/css/style.css")
+    body
+        nav
+            a.cont(href="/")
+                img(
+                    src="/img/logoNode.png" 
+                    alt="logoNode"
+                    class="logo"
+                    ) 
+        h1 Que qué hacemos??...intentar que llegue el pensamiento lógico
+        h2 Mientras llega, en la home puedes ver la documentacion de Node o mejor, busca datos de pelis, que es más diver
+        div(class="container")
+            p=result
+            form(action="/Mission_Morirnos_eso_hacemos" method="post")
+                input(type="text" name="peli" class="input" placeholder="Introduce a movie")
+                input(type="text" name="type" class="input" placeholder="movie or series or episode")
+                input(type="submit", value="Resultados" class="input")
+        div(class="description")
+            label Película
+                p(id="titulo")=movie
+            label Tipo
+                p(id="tipo")=type
+            label Director
+                p(id="director")=director
+            label Año
+                p(id="año")=year
+            label Idioma
+                p(id="idioma")=lang
+
+        a.miss(href="/Contact_Llama_llama_que_veras_que_gracia") Contáctanos
